@@ -1,0 +1,12 @@
+# direnv
+/.direnv
+
+# VSCode
+.vscode/settings.json
+
+# dist
+dist/*.pdf
+!dist/.keep
+
+# SATySFi
+*.satysfi-aux
