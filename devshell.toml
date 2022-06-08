@@ -1,8 +1,14 @@
+[devshell]
+name = "say-hello-to-satysfi"
 packages = [
   "gnumake",
   "alejandra",
-  "taplo-cli",
+  "dprint",
   "satysfi",
   "satysfi-formatter",
   "satysfi-language-server",
 ]
+
+[[commands]]
+package = "treefmt"
+category = "formatter"
