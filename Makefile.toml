@@ -1,0 +1,3 @@
+[tasks.generate]
+command = "satysfi"
+args = ["./src/main.saty", "-o", "dist/main.pdf"]

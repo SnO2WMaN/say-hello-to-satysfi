@@ -1,7 +1,7 @@
 [devshell]
 name = "say-hello-to-satysfi"
 packages = [
-  "gnumake",
+  "cargo-make",
   "alejandra",
   "dprint",
   "satysfi",
