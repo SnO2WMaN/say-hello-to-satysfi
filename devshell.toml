@@ -1,1 +1,6 @@
-packages = ["gnumake", "satysfi"]
+packages = [
+    "gnumake",
+    "satysfi",
+    "satysfi-formatter",
+    "satysfi-language-server",
+]

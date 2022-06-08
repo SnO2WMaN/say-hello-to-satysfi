@@ -1,12 +1,18 @@
 # direnv
-/.direnv
+.direnv
+
+# Nix
+result
 
 # VSCode
 .vscode/settings.json
+
+# SATySFi
+*.satysfi-aux
 
 # dist
 dist/*.pdf
 !dist/.keep
 
-# SATySFi
-*.satysfi-aux
+# preview
+src/*.pdf
