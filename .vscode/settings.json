@@ -1,0 +1,24 @@
+{
+  "nixEnvSelector.nixFile": "${workspaceRoot}/shell.nix",
+  "satysfi-workshop.languageServer.enabled": true,
+  "satysfi-workshop.languageServer.path": "satysfi-language-server",
+  "customLocalFormatters.formatters": [
+    {
+      "command": "treefmt -q --stdin ${file}",
+      "languages": [
+        "toml",
+        "nix",
+        "satysfi"
+      ]
+    }
+  ],
+  "[toml]": {
+    "editor.defaultFormatter": "jkillian.custom-local-formatters"
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "jkillian.custom-local-formatters"
+  },
+  "[satysfi]": {
+    "editor.defaultFormatter": "jkillian.custom-local-formatters"
+  }
+}

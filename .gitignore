@@ -4,9 +4,6 @@
 # Nix
 result
 
-# VSCode
-.vscode/settings.json
-
 # SATySFi
 *.satysfi-aux
 
