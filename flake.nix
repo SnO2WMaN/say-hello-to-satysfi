@@ -10,9 +10,16 @@
       flake = false;
     };
   };
-  outputs = { self, nixpkgs, flake-utils, devshell, satysfi-tools, ... } @ inputs:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
+  outputs = {
+    self,
+    nixpkgs,
+    flake-utils,
+    devshell,
+    satysfi-tools,
+    ...
+  } @ inputs:
+    flake-utils.lib.eachDefaultSystem (
+      system: let
         pkgs = import nixpkgs {
           inherit system;
           overlays = [
@@ -20,8 +27,7 @@
             satysfi-tools.overlay
           ];
         };
-      in
-      {
+      in {
         devShell = pkgs.devshell.mkShell {
           imports = [
             (pkgs.devshell.importTOML ./devshell.toml)

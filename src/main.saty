@@ -1,11 +1,17 @@
 @require: stdja
+
 StdJa.document (|
-  title = {はじめての\SATySFi;};
-  author = {SnO2WMaN};
-  show-title = true;
-  show-toc = true;
+    title = { はじめての\SATySFi; };
+    author = { SnO2WMaN };
+    show-title = false;
+    show-toc = false;
 |) '<
-  +p {
-    がんばるぞ〜
-  }
+    +p{ がんばるぞ〜 }
+    +math (${x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}});
+
+    +align [
+        [
+            ${\Gamma \vDash \Delta};
+        ];
+    ];
 >

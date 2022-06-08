@@ -1,6 +1,8 @@
 packages = [
-    "gnumake",
-    "satysfi",
-    "satysfi-formatter",
-    "satysfi-language-server",
+  "gnumake",
+  "alejandra",
+  "taplo-cli",
+  "satysfi",
+  "satysfi-formatter",
+  "satysfi-language-server",
 ]

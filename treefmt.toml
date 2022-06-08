@@ -1,8 +1,13 @@
 [formatter.nix]
-command = "nixpkgs-fmt"
+command = "alejandra"
 includes = ["*.nix"]
 
 [formatter.toml]
 command = "taplo"
 options = ["format"]
 includes = ["*.toml"]
+
+[formatter.saty]
+command = "satysfi-fmt"
+options = ["--write"]
+includes = ["*.saty"]
